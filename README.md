@@ -1,4 +1,4 @@
-# SpaceNovaX Real Website 8 Pages
+# SpaceNovaX UltraHQ Website
 
-Actual website package with 8 separated page hero images and stable non-overlapping layout.
+4K scalable SVG hero backgrounds, no baked English text, no blur/collage, stable website layout.
 Telegram: https://t.me/spacesnovax
