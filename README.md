@@ -1,3 +1,3 @@
-# SpaceNovaX Exact Hero Model
+# SpaceNovaX Live Cinematic HQ
 
-Uses the selected hero model image as homepage background.
+High-quality live cinematic hero background.
