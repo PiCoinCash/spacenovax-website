@@ -1,124 +1,34 @@
 <!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-  <meta name="theme-color" content="#050816">
-  <meta name="description" content="SpaceNovaX official website. Explore. Mine. Evolve.">
-  <title>SpaceNovaX | Home</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800;900&family=Orbitron:wght@600;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-</head>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#050816"><title>SpaceNovaX | Explore. Mine. Evolve.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800;900&family=Orbitron:wght@600;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"></head>
 <body>
-  <canvas id="starfield" aria-hidden="true"></canvas>
-  <canvas id="dustfield" aria-hidden="true"></canvas>
-  <div class="meteor meteor-a" aria-hidden="true"></div>
-  <div class="meteor meteor-b" aria-hidden="true"></div>
-
-  <header class="site-header">
-    <div class="header-inner">
-      <a class="brand" href="index.html" aria-label="SpaceNovaX Home">
-        <img src="assets/img/spacenovax-symbol.jpg" alt="SpaceNovaX symbol">
-        <span><b>SPACENOVA<i>X</i></b><small>EXPLORE · MINE · EVOLVE</small></span>
-      </a>
-
-      <button class="menu-button" id="menuButton" aria-label="Open menu">☰</button>
-
-      <nav class="nav" id="nav">
-        <a class="active" href="index.html">HOME</a>
-        <a href="about.html">ABOUT</a>
-        <a href="tokenomics.html">TOKENOMICS</a>
-        <a href="roadmap.html">ROADMAP</a>
-        <a href="mission.html">MISSION</a>
-        <a href="captain-ai.html">CAPTAIN AI</a>
-        <a href="whitepaper.html">WHITEPAPER</a>
-        <a href="community.html">COMMUNITY</a>
-      </nav>
-
-      <a class="launch header-launch" href="https://t.me/spacesnovax" target="_blank" rel="noopener">LAUNCH APP</a>
-    </div>
-  </header>
-
-  <main>
-    <section class="hero">
-      <div class="hero-bg"></div>
-      <div class="hero-glow"></div>
-
-      <div class="hero-container">
-        <section class="hero-copy" aria-label="SpaceNovaX introduction">
-          <p class="kicker">SPACE COMMAND CENTER</p>
-          <h1>WE EXPLORE.<br>WE <span>MINE.</span><br>WE EVOLVE.</h1>
-          <p class="lead">Join the galaxy of Captains. Mine SPNX Crystals. Complete missions. Build the future together.</p>
-          <div class="cta-row">
-            <a class="button primary" href="https://t.me/spacesnovax" target="_blank" rel="noopener">Launch App</a>
-            <a class="button secondary" href="whitepaper.html">Whitepaper</a>
-          </div>
-        </section>
-
-        <aside class="nova-panel" id="novaPanel" aria-label="Captain AI Nova">
-          <div class="nova-title" id="novaDragHandle" title="Drag Nova panel">
-            <b>CAPTAIN AI NOVA</b><span>● ONLINE</span><button class="nova-toggle" id="novaToggle" type="button" aria-label="Minimize Nova">—</button>
-          </div>
-          <div class="nova-portrait">
-            <img src="assets/img/captain-nova.jpg" alt="Captain AI Nova">
-            <div class="scanline"></div>
-            <div class="mouth" id="mouthPulse"></div>
-          </div>
-          <p class="nova-message" id="novaText">Welcome aboard, Captain.<br>Mining systems online.<br>Mission briefing available.</p>
-          <div class="name-save">
-            <input id="captainName" placeholder="Captain name">
-            <button id="saveCaptain">Save</button>
-          </div>
-          <div class="voice-controls">
-            <button id="novaSpeak">Nova Voice</button>
-            <button id="novaStop">Stop</button>
-          </div>
-          <p class="drag-note">Drag top bar · Double-click to reset</p>
-        </aside>
-      </div>
-    </section>
-
-    <section class="stats-bar" aria-label="SpaceNovaX status">
-      <div><b data-count="25680">0</b><span>Total Captains</span></div>
-      <div><b data-count="18947">0</b><span>KYC Verified</span></div>
-      <div><b data-count="7654321">0</b><span>SPNX Mined</span></div>
-      <div><b>10B</b><span>Total Supply</span></div>
-      <div><b>65%</b><span>Community</span></div>
-      <div><b>SOLANA</b><span>Network</span></div>
-    </section>
-
-    <section class="feature-grid" aria-label="SpaceNovaX features">
-      <a class="feature-card" href="mission.html"><h3>Mission Center</h3><p>Explore meteor fields and collect SPNX Crystals.</p></a>
-      <a class="feature-card" href="captain-ai.html"><h3>Captain AI Nova</h3><p>Voice guidance and future AI chat support.</p></a>
-      <a class="feature-card" href="tokenomics.html"><h3>SPNX Energy System</h3><p>Community 65%, fixed supply, no future mint.</p></a>
-      <a class="feature-card" href="roadmap.html"><h3>Galaxy Route</h3><p>Premium UI, Arcade, Control Center and Launch.</p></a>
-    </section>
-  </main>
-
-  <footer class="command-footer">
-    <div class="footer-inner">
-      <div class="footer-head">
-        <img src="assets/img/spacenovax-symbol.jpg" alt="SpaceNovaX">
-        <div>
-          <h2>SPACE COMMAND CENTER</h2>
-          <p>Join the SpaceNovaX Fleet. Explore. Mine. Evolve.</p>
-        </div>
-      </div>
-
-      <div class="social-grid">
-        <a class="social youtube" href="https://youtube.com/@spacenovaxteam" target="_blank" rel="noopener"><b>▶</b><span>YouTube</span><small>Official Videos</small></a>
-        <a class="social x" href="https://x.com/spacenovaxteam" target="_blank" rel="noopener"><b>𝕏</b><span>X</span><small>News & Updates</small></a>
-        <a class="social telegram" href="https://t.me/spacesnovax" target="_blank" rel="noopener"><b>✈</b><span>Telegram</span><small>Join Captains</small></a>
-        <a class="social discord" href="https://discord.gg/rxVNWMC8e8" target="_blank" rel="noopener"><b>☊</b><span>Discord</span><small>Community Hub</small></a>
-      </div>
-
-      <div class="network-pill"><span>GLOBAL CAPTAIN NETWORK</span><b>18,947 ONLINE</b></div>
-      <p class="copyright">© 2026 SpaceNovaX · spacenovax@hotmail.com</p>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
-</html>
+<canvas id="starfield"></canvas><canvas id="dustfield"></canvas><span class="meteor meteor-a"></span><span class="meteor meteor-b"></span>
+<header class="site-header"><div class="header-inner">
+<a class="brand" href="#home"><img src="assets/img/spacenovax-symbol.jpg"><span><b>SPACENOVA<i>X</i></b><small>EXPLORE · MINE · EVOLVE</small></span></a>
+<button class="menu-button" id="menuButton">☰</button>
+<nav class="nav" id="nav"><a class="active" href="#home">HOME</a><a href="#mission">MISSION</a><a href="#tokenomics">TOKENOMICS</a><a href="#roadmap">ROADMAP</a><a href="#community">COMMUNITY</a></nav>
+<a class="launch header-launch" href="https://t.me/spacesnovax" target="_blank">LAUNCH MINING APP</a>
+</div></header>
+<main>
+<section class="hero" id="home"><div class="hero-bg"></div><div class="hero-glow"></div><div class="hero-container">
+<section class="hero-copy"><p class="kicker">SPACE COMMAND CENTER</p><h1>EXPLORE.<br><span>MINE.</span><br>EVOLVE.</h1>
+<p class="lead">A cinematic Web3 universe powered by community, AI, GameFi and Solana. Mining runs inside the Telegram Mini App.</p>
+<div class="cta-row"><a class="button primary" href="https://t.me/spacesnovax" target="_blank">Launch Mining App</a><a class="button secondary" href="#tokenomics">Tokenomics</a></div></section>
+<aside class="nova-panel" id="novaPanel"><div class="nova-title"><b>CAPTAIN AI NOVA</b><span>● ONLINE</span><button class="nova-toggle" id="novaToggle">OPEN</button></div>
+<div class="nova-portrait"><img src="assets/img/captain-nova.jpg"><div class="scanline"></div><div class="mouth" id="mouthPulse"></div></div>
+<p class="nova-message">Welcome aboard, Captain.<br>Launch the Telegram Mining App when ready.</p>
+<div class="voice-controls"><button id="novaSpeak">Nova Voice</button><button id="novaStop">Stop</button></div></aside>
+</div></section>
+<section class="stats-bar"><div><b>10B</b><span>Total Supply</span></div><div><b>65%</b><span>Community</span></div><div><b>30</b><span>Base Mining / 24H</span></div><div><b>SOLANA</b><span>Network</span></div></section>
+<section class="section" id="mission"><div class="section-head"><p class="kicker">MISSION</p><h2>Website for trust. Telegram for mining.</h2><p>SpaceNovaX website shows the brand, story and tokenomics. Mining, missions, referrals and KYC run inside the Telegram Mini App.</p></div>
+<div class="feature-grid"><a class="feature-card" href="https://t.me/spacesnovax" target="_blank"><h3>Launch Mining App</h3><p>Start mining SPNX Points inside Telegram.</p></a><a class="feature-card" href="#captain-ai"><h3>Captain AI Nova</h3><p>Voice-guided project assistant.</p></a><a class="feature-card" href="#tokenomics"><h3>Fair Tokenomics</h3><p>Community 65%, fixed supply, no future mint.</p></a><a class="feature-card" href="#community"><h3>Global Fleet</h3><p>Join all SpaceNovaX channels.</p></a></div></section>
+<section class="section" id="tokenomics"><div class="section-head"><p class="kicker">TOKENOMICS</p><h2>Official SPNX Allocation</h2><p>Total supply: 10,000,000,000 SPNX · No Future Mint</p></div>
+<div class="token-wrap"><div class="donut"><b>65%</b><span>Community</span></div><ul class="token-list"><li><span>Community · Mining · GameFi · Missions · Referrals · Events</span><b>65%</b></li><li><span>Liquidity</span><b>10%</b></li><li><span>Ecosystem Development</span><b>10%</b></li><li><span>Team</span><b>5%</b></li><li><span>Marketing & Partnerships</span><b>5%</b></li><li><span>Treasury</span><b>3%</b></li><li><span>Advisors</span><b>2%</b></li></ul></div></section>
+<section class="section" id="roadmap"><div class="section-head"><p class="kicker">ROADMAP</p><h2>Galaxy Route</h2></div><div class="roadmap"><div><b>01</b><h3>Premium Website</h3><p>One-page cinematic trust layer.</p></div><div><b>02</b><h3>Telegram Mini App</h3><p>Mining, missions and referrals.</p></div><div><b>03</b><h3>Captain AI + GameFi</h3><p>AI assistant and arcade missions.</p></div><div><b>04</b><h3>Solana Launch</h3><p>SPNX conversion and ecosystem expansion.</p></div></div></section>
+<section class="section captain-section" id="captain-ai"><div class="section-head"><p class="kicker">CAPTAIN AI</p><h2>Nova, your AI Fleet Commander</h2><p>Nova guides visitors and directs them to the Telegram Mining App.</p></div><a class="button primary" href="https://t.me/spacesnovax" target="_blank">Talk with Nova in Telegram</a></section>
+<section class="section" id="community"><div class="section-head"><p class="kicker">COMMUNITY</p><h2>Join the SpaceNovaX Fleet</h2></div><div class="social-grid"><a class="social youtube" href="https://youtube.com/@spacenovaxteam" target="_blank"><b>▶</b><span>YouTube</span><small>Official Videos</small></a><a class="social x" href="https://x.com/spacenovaxteam" target="_blank"><b>𝕏</b><span>X</span><small>News & Updates</small></a><a class="social telegram" href="https://t.me/spacesnovax" target="_blank"><b>✈</b><span>Telegram</span><small>Join Captains</small></a><a class="social discord" href="https://discord.gg/rxVNWMC8e8" target="_blank"><b>☊</b><span>Discord</span><small>Community Hub</small></a></div></section>
+</main><footer class="footer"><img src="assets/img/spacenovax-symbol.jpg"><h2>SPACENOVAX</h2><p>Explore. Mine. Evolve.</p><small>© 2026 SpaceNovaX · spacenovax@hotmail.com</small></footer><script src="script.js"></script></body></html>
