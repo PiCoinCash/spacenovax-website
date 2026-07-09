@@ -1,3 +1,3 @@
-# SpaceNovaX Premium v2 Cinematic
+# SpaceNovaX Clean No 3D No Image Text
 
-Cloudflare Pages static site.
+All generated 3D/text-image assets removed.
