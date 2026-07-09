@@ -1,4 +1,3 @@
-# SpaceNovaX Vertical Menu Grid Homepage
+# SpaceNovaX Fixed No Overlap
 
-Homepage redesigned with vertical 8-panel menu grid style.
-Telegram: https://t.me/spacesnovax
+Stable layout fix: no duplicated hero, no overlapping old text, cards separated below hero. Telegram: https://t.me/spacesnovax
