@@ -42,3 +42,50 @@ document.addEventListener('DOMContentLoaded', () => {
   document.documentElement.style.overflowX = 'hidden';
   document.body.style.overflowX = 'hidden';
 });
+
+
+// Captain AI Nova voice using browser Web Speech API.
+// Works in modern Chrome/Edge. No paid API key needed for this first version.
+(function(){
+  const speakBtn = document.getElementById('novaSpeak');
+  const stopBtn = document.getElementById('novaStop');
+
+  const novaLines = [
+    "Welcome back, Captain. I am Nova, your AI Fleet Commander.",
+    "Mining systems are online. Your NOVA X One ship is ready.",
+    "A new mission is available. Shall we begin our journey?",
+    "SpaceNovaX is ready. Explore. Mine. Evolve."
+  ];
+
+  function getVoice(){
+    const voices = window.speechSynthesis ? speechSynthesis.getVoices() : [];
+    return voices.find(v => /female|woman|zira|samantha|google us english/i.test(v.name)) ||
+           voices.find(v => /en/i.test(v.lang)) ||
+           voices[0];
+  }
+
+  function speakNova(){
+    if(!("speechSynthesis" in window)){
+      alert("This browser does not support AI voice playback.");
+      return;
+    }
+    speechSynthesis.cancel();
+    const msg = new SpeechSynthesisUtterance(novaLines.join(" "));
+    msg.lang = "en-US";
+    msg.rate = 0.92;
+    msg.pitch = 1.08;
+    msg.volume = 1;
+    const voice = getVoice();
+    if(voice) msg.voice = voice;
+    speechSynthesis.speak(msg);
+  }
+
+  speakBtn?.addEventListener('click', speakNova);
+  stopBtn?.addEventListener('click', () => {
+    if("speechSynthesis" in window) speechSynthesis.cancel();
+  });
+
+  if("speechSynthesis" in window){
+    speechSynthesis.onvoiceschanged = getVoice;
+  }
+})();

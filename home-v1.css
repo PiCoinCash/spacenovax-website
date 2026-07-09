@@ -246,3 +246,44 @@ h1 em{font-style:normal;color:#8f4cff}
   .status-bar div{border-right:0;border-bottom:1px solid rgba(78,180,255,.18)}
   .home-cards{grid-template-columns:1fr}
 }
+
+
+/* HOME V1.1: smaller intro text + AI voice buttons */
+@media (min-width: 821px){
+  h1{
+    font-size:clamp(40px,4.7vw,72px) !important;
+    line-height:1.02 !important;
+    margin:14px 0 !important;
+  }
+  .lead{
+    font-size:clamp(14px,1.15vw,17px) !important;
+    line-height:1.45 !important;
+    max-width:500px !important;
+  }
+  .hero-copy{
+    max-width:520px !important;
+  }
+  .hero-inner{
+    grid-template-columns:minmax(0,520px) minmax(280px,350px) !important;
+  }
+}
+
+.voice-controls{
+  display:grid;
+  grid-template-columns:1fr 76px;
+  gap:7px;
+  margin-top:10px;
+}
+.voice-controls button{
+  border:1px solid var(--line);
+  border-radius:8px;
+  background:rgba(0,55,115,.72);
+  color:#dff7ff;
+  padding:9px;
+  font-size:12px;
+  font-weight:900;
+  cursor:pointer;
+}
+.voice-controls button:hover{
+  box-shadow:0 0 16px rgba(34,220,255,.35);
+}
