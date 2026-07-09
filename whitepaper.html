@@ -1,49 +1,33 @@
 <!doctype html>
 <html lang="en">
-<head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#020712">
-<meta name="description" content="SpaceNovaX NOVA-X1 official website. Explore. Mine. Evolve.">
-<meta property="og:title" content="SpaceNovaX | NOVA-X1">
-<meta property="og:description" content="Explore. Mine. Evolve. Mine SPNX, complete missions and join the SpaceNovaX universe.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&family=Orbitron:wght@600;800;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css"><title>Whitepaper | SpaceNovaX</title></head>
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#050816">
+<title>Whitepaper | SpaceNovaX</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800;900&family=Orbitron:wght@600;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
 <body>
-<canvas id="starfield"></canvas>
-<header class="topbar">
-  <a class="brand" href="index.html">
-    <img src="assets/spacenovax-logo.jpg" alt="SpaceNovaX logo">
-    <span><b>SPACENOVA<i>X</i></b><small>EXPLORE. MINE. EVOLVE.</small></span>
-  </a>
-  <nav id="nav"><a class="" href="index.html">HOME</a><a class="" href="about.html">ABOUT</a><a class="" href="tokenomics.html">TOKENOMICS</a><a class="" href="roadmap.html">ROADMAP</a><a class="" href="mission.html">MISSION</a><a class="" href="captain-ai.html">CAPTAIN AI</a><a class="active" href="whitepaper.html">WHITEPAPER</a><a class="" href="community.html">COMMUNITY</a></nav>
-  <div class="actions">
-    <a class="launch" href="https://t.me/spacesnovax" target="_blank">🚀 LAUNCH APP</a>
-    <button class="lang">🌐 EN</button>
-    <button id="hamb">☰</button>
+<canvas id="starfield"></canvas><canvas id="dustfield"></canvas>
+<span class="meteor meteor-a"></span><span class="meteor meteor-b"></span>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html"><img src="assets/img/spacenovax-symbol.jpg" alt="SpaceNovaX"><span><b>SPACENOVA<i>X</i></b><small>EXPLORE · MINE · EVOLVE</small></span></a>
+    <button class="menu-button" id="menuButton">☰</button>
+    <nav class="nav" id="nav"><a class="" href="index.html">HOME</a><a class="" href="about.html">ABOUT</a><a class="" href="captain-ai.html">CAPTAIN AI</a><a class="" href="mining.html">MINING</a><a class="" href="tokenomics.html">TOKENOMICS</a><a class="" href="roadmap.html">ROADMAP</a><a class="" href="community.html">COMMUNITY</a><a class="active" href="whitepaper.html">WHITEPAPER</a></nav>
+    <a class="launch" href="https://t.me/spacesnovax" target="_blank" rel="noopener">🚀 LAUNCH MINING APP</a>
   </div>
 </header>
-<main><section class="hero" style="--hero:url('assets/heroes/hero-whitepaper.jpg')">
-<div class="hero-shade"></div>
-<div class="hero-content">
-<p class="eyebrow">SPACENOVAX · NOVA-X1</p>
-<h1>WHITEPAPER</h1>
-<p class="lead">SpaceNovaX technology, vision and tokenomics.</p>
 
-</div>
-</section><section class="content-grid"><article><h2>Core Policy</h2><p>Total Supply 10B SPNX. Community 65%. No Future Mint.</p></article><article><h2>Conversion</h2><p>6-month post-mainnet conversion window. KYC required.</p></article><article><h2>Disclaimer</h2><p>Digital assets involve risk. This is informational and not financial advice.</p></article></section></main>
-<a class="ai-float" href="captain-ai.html">🤖</a>
-<footer>
-  <div class="socials">
-    <span>FOLLOW US</span>
-    <a href="https://t.me/spacesnovax" target="_blank">Telegram</a>
-    <a href="https://x.com/spacenovaxteam" target="_blank">X</a>
-    <a href="https://youtube.com/@spacenovaxteam" target="_blank">YouTube</a>
-    <a href="https://discord.gg/rxVNWMC8e8" target="_blank">Discord</a>
-  </div>
-  <p>© <span id="year"></span> SpaceNovaX · spacenovax@hotmail.com</p>
+<main><section class="subhero"><div class="hero-bg"></div><div class="subcopy"><p class="kicker">WHITEPAPER</p><h1>SpaceNovaX Version 1.0</h1><p class="lead">Vision, mining rules, tokenomics, KYC conversion, burn policy and roadmap summary.</p></div></section>
+<section class="section two"><div class="panel"><h3>Core Rules</h3><p>Fixed 10B SPNX supply. No future mint. KYC required for final conversion. Unconverted balances are burned after the conversion window.</p></div><div class="panel"><h3>Fair Burn</h3><p>Team burn percentage matches community burn percentage for fairness and transparency.</p></div></section></main>
+<footer class="footer">
+  <img src="assets/img/spacenovax-symbol.jpg" alt="SpaceNovaX">
+  <h2>SPACENOVAX</h2>
+  <p>Explore. Mine. Evolve.</p>
+  <small>© 2026 SpaceNovaX · spacenovax@hotmail.com</small>
 </footer>
 <script src="script.js"></script>
-</body>
-</html>
+</body></html>

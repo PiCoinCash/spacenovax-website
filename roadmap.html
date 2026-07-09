@@ -1,49 +1,33 @@
 <!doctype html>
 <html lang="en">
-<head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#020712">
-<meta name="description" content="SpaceNovaX NOVA-X1 official website. Explore. Mine. Evolve.">
-<meta property="og:title" content="SpaceNovaX | NOVA-X1">
-<meta property="og:description" content="Explore. Mine. Evolve. Mine SPNX, complete missions and join the SpaceNovaX universe.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&family=Orbitron:wght@600;800;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css"><title>Roadmap | SpaceNovaX</title></head>
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#050816">
+<title>Roadmap | SpaceNovaX</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800;900&family=Orbitron:wght@600;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
 <body>
-<canvas id="starfield"></canvas>
-<header class="topbar">
-  <a class="brand" href="index.html">
-    <img src="assets/spacenovax-logo.jpg" alt="SpaceNovaX logo">
-    <span><b>SPACENOVA<i>X</i></b><small>EXPLORE. MINE. EVOLVE.</small></span>
-  </a>
-  <nav id="nav"><a class="" href="index.html">HOME</a><a class="" href="about.html">ABOUT</a><a class="" href="tokenomics.html">TOKENOMICS</a><a class="active" href="roadmap.html">ROADMAP</a><a class="" href="mission.html">MISSION</a><a class="" href="captain-ai.html">CAPTAIN AI</a><a class="" href="whitepaper.html">WHITEPAPER</a><a class="" href="community.html">COMMUNITY</a></nav>
-  <div class="actions">
-    <a class="launch" href="https://t.me/spacesnovax" target="_blank">🚀 LAUNCH APP</a>
-    <button class="lang">🌐 EN</button>
-    <button id="hamb">☰</button>
+<canvas id="starfield"></canvas><canvas id="dustfield"></canvas>
+<span class="meteor meteor-a"></span><span class="meteor meteor-b"></span>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html"><img src="assets/img/spacenovax-symbol.jpg" alt="SpaceNovaX"><span><b>SPACENOVA<i>X</i></b><small>EXPLORE · MINE · EVOLVE</small></span></a>
+    <button class="menu-button" id="menuButton">☰</button>
+    <nav class="nav" id="nav"><a class="" href="index.html">HOME</a><a class="" href="about.html">ABOUT</a><a class="" href="captain-ai.html">CAPTAIN AI</a><a class="" href="mining.html">MINING</a><a class="" href="tokenomics.html">TOKENOMICS</a><a class="active" href="roadmap.html">ROADMAP</a><a class="" href="community.html">COMMUNITY</a><a class="" href="whitepaper.html">WHITEPAPER</a></nav>
+    <a class="launch" href="https://t.me/spacesnovax" target="_blank" rel="noopener">🚀 LAUNCH MINING APP</a>
   </div>
 </header>
-<main><section class="hero" style="--hero:url('assets/heroes/hero-roadmap.jpg')">
-<div class="hero-shade"></div>
-<div class="hero-content">
-<p class="eyebrow">SPACENOVAX · NOVA-X1</p>
-<h1>ROADMAP</h1>
-<p class="lead">From premium brand to Telegram Mini App, community scale and Solana launch.</p>
 
-</div>
-</section><section class="timeline"><div><b>Phase 1</b><h3>Website & Brand</h3><p>Official site, tokenomics, whitepaper, Captain AI and Mission Center.</p></div><div><b>Phase 2</b><h3>Telegram Mini App</h3><p>Mining, referrals, missions, ranking and dashboard.</p></div><div><b>Phase 3</b><h3>Gaming & AI</h3><p>Mission expansion, AI companion and community events.</p></div><div><b>Phase 4</b><h3>Genesis Launch</h3><p>Solana token launch, liquidity and conversion.</p></div></section></main>
-<a class="ai-float" href="captain-ai.html">🤖</a>
-<footer>
-  <div class="socials">
-    <span>FOLLOW US</span>
-    <a href="https://t.me/spacesnovax" target="_blank">Telegram</a>
-    <a href="https://x.com/spacenovaxteam" target="_blank">X</a>
-    <a href="https://youtube.com/@spacenovaxteam" target="_blank">YouTube</a>
-    <a href="https://discord.gg/rxVNWMC8e8" target="_blank">Discord</a>
-  </div>
-  <p>© <span id="year"></span> SpaceNovaX · spacenovax@hotmail.com</p>
+<main><section class="subhero"><div class="hero-bg"></div><div class="subcopy"><p class="kicker">ROADMAP</p><h1>Galaxy Route.</h1><p class="lead">A staged mission from premium brand to Telegram mining, AI, GameFi and Solana launch.</p></div></section>
+<section class="section timeline"><div class="panel"><b>PHASE 01</b><h3>Premium Website</h3><p>Cinematic brand and trust layer.</p></div><div class="panel"><b>PHASE 02</b><h3>Telegram Mining</h3><p>Mining, missions, referrals and leaderboard.</p></div><div class="panel"><b>PHASE 03</b><h3>Captain AI + Arcade</h3><p>AI assistant and GameFi missions.</p></div><div class="panel"><b>PHASE 04</b><h3>SPNX Launch</h3><p>Solana token, conversion and ecosystem expansion.</p></div></section></main>
+<footer class="footer">
+  <img src="assets/img/spacenovax-symbol.jpg" alt="SpaceNovaX">
+  <h2>SPACENOVAX</h2>
+  <p>Explore. Mine. Evolve.</p>
+  <small>© 2026 SpaceNovaX · spacenovax@hotmail.com</small>
 </footer>
 <script src="script.js"></script>
-</body>
-</html>
+</body></html>
