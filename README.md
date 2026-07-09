@@ -1,3 +1,3 @@
-# SpaceNovaX Live Cinematic HQ
+# SpaceNovaX V2 Multi Hero HQ
 
-High-quality live cinematic hero background.
+Each menu page uses a different high-quality cinematic hero background. Telegram link: https://t.me/spacesnovax
