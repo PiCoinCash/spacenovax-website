@@ -1,44 +1,86 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8">
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>SpaceNovaX</title>
+<meta name="theme-color" content="#020712">
+<meta name="description" content="SpaceNovaX NOVA-X1 official website. Explore. Mine. Evolve.">
+<meta property="og:title" content="SpaceNovaX | NOVA-X1">
+<meta property="og:description" content="Explore. Mine. Evolve. Mine SPNX, complete missions and join the SpaceNovaX universe.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&family=Orbitron:wght@600;800;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css"></head><body>
-<header>
-<a class="brand" href="index.html"><img src="assets/spacenovax-logo.jpg"><span>SPACENOVA<i>X</i><small>EXPLORE. MINE. EVOLVE.</small></span></a>
-<nav><a class="" href="index.html">HOME</a><a class="" href="about.html">ABOUT</a><a class="active" href="tokenomics.html">TOKENOMICS</a><a class="" href="roadmap.html">ROADMAP</a><a class="" href="mission.html">MISSION</a><a class="" href="captain-ai.html">CAPTAIN AI</a><a class="" href="whitepaper.html">WHITEPAPER</a><a class="" href="community.html">COMMUNITY</a></nav>
-<a class="launch" href="https://t.me/spacesnovax" target="_blank">🚀 LAUNCH APP</a>
+<link rel="stylesheet" href="style.css"><title>Tokenomics | SpaceNovaX</title></head>
+<body>
+<canvas id="starfield"></canvas>
+<header class="topbar">
+  <a class="brand" href="index.html">
+    <img src="assets/spacenovax-logo.jpg" alt="SpaceNovaX logo">
+    <span><b>SPACENOVA<i>X</i></b><small>EXPLORE. MINE. EVOLVE.</small></span>
+  </a>
+  <nav id="nav"><a class="" href="index.html">HOME</a><a class="" href="about.html">ABOUT</a><a class="active" href="tokenomics.html">TOKENOMICS</a><a class="" href="roadmap.html">ROADMAP</a><a class="" href="mission.html">MISSION</a><a class="" href="captain-ai.html">CAPTAIN AI</a><a class="" href="whitepaper.html">WHITEPAPER</a><a class="" href="community.html">COMMUNITY</a></nav>
+  <div class="actions">
+    <a class="launch" href="https://t.me/spacesnovax" target="_blank">🚀 LAUNCH APP</a>
+    <button class="lang">🌐 EN</button>
+    <button id="hamb">☰</button>
+  </div>
 </header>
-<main>
-<section class="hero" style="--bg:url('assets/heroes/hero-tokenomics.jpg')">
-<div class="shade"></div>
-<div class="copy">
-<p>SPACENOVAX · NOVA-X1</p>
+<main><section class="hero" style="--hero:url('assets/heroes/hero-tokenomics.jpg')">
+<div class="hero-shade"></div>
+<div class="hero-content">
+<p class="eyebrow">SPACENOVAX · NOVA-X1</p>
 <h1>TOKENOMICS</h1>
-<h3>Community 65%, Liquidity 10%, Ecosystem 10%, Team 5%, Marketing 5%, Treasury 3%, Advisors 2%.</h3>
-<a class="btn" href="https://t.me/spacesnovax" target="_blank">JOIN TELEGRAM</a>
-<a class="btn ghost" href="whitepaper.html">WHITEPAPER</a>
+<p class="lead">Community first. Fixed supply. No Future Mint.</p>
 </div>
 </section>
-<section class="stats">
-<div><b>10,000,000,000</b><span>Total Supply</span></div>
-<div><b>3,500,000,000</b><span>Mining Pool</span></div>
-<div><b>30</b><span>Base Mining / 24H</span></div>
-<div><b>65%</b><span>Community</span></div>
-</section>
-<section class="tokenomics">
-<h2>Official Tokenomics</h2>
-<div class="bars">
-<div><span>Community</span><b>65%</b></div>
-<div><span>Liquidity</span><b>10%</b></div>
-<div><span>Ecosystem Development</span><b>10%</b></div>
-<div><span>Team</span><b>5%</b></div>
-<div><span>Marketing & Partnerships</span><b>5%</b></div>
-<div><span>Treasury</span><b>3%</b></div>
-<div><span>Advisors</span><b>2%</b></div>
-</div>
-</section>
-</main>
-<footer>© SpaceNovaX · spacenovax@hotmail.com</footer>
-</body></html>
+
+<section class="tokenomics-official">
+  <div class="token-head">
+    <p class="eyebrow mini">SPNX OFFICIAL TOKENOMICS</p>
+    <h2>10,000,000,000 SPNX</h2>
+    <p>Total Supply · No Future Mint · Community First</p>
+  </div>
+
+  <div class="token-layout">
+    <div class="token-donut-wrap">
+      <div class="token-donut"><b>65%</b><span>Community</span></div>
+      <div class="token-supply-card">
+        <span>Total Supply</span>
+        <b>10B SPNX</b>
+        <small>No Future Mint</small>
+      </div>
+    </div>
+
+    <div class="allocation-grid">
+      <article style="--p:65%;--c:#14c8ff"><div><i>🌍</i><h3>Community</h3><p>Mining · GameFi · Missions · Referrals · Events</p></div><b>65%</b></article>
+      <article style="--p:10%;--c:#22e0c8"><div><i>💧</i><h3>Liquidity</h3><p>DEX/CEX liquidity and market stability</p></div><b>10%</b></article>
+      <article style="--p:10%;--c:#5fa8ff"><div><i>🌌</i><h3>Ecosystem Development</h3><p>Mini App · Captain AI · Games · Wallet · Marketplace</p></div><b>10%</b></article>
+      <article style="--p:5%;--c:#8c5cff"><div><i>👨‍💻</i><h3>Team</h3><p>Long-term builders and operations</p></div><b>5%</b></article>
+      <article style="--p:5%;--c:#b050ff"><div><i>📢</i><h3>Marketing & Partnerships</h3><p>Global growth, KOLs and strategic partnerships</p></div><b>5%</b></article>
+      <article style="--p:3%;--c:#6f7cff"><div><i>🏛️</i><h3>Treasury</h3><p>Reserve for future operations and opportunities</p></div><b>3%</b></article>
+      <article style="--p:2%;--c:#4354ff"><div><i>🤝</i><h3>Advisors</h3><p>Technical, business and strategic advisors</p></div><b>2%</b></article>
+    </div>
+  </div>
+
+  <div class="token-policy-grid">
+    <div><b>Mining Pool</b><span>3,500,000,000 SPNX</span><small>35% dedicated to mining rewards.</small></div>
+    <div><b>Base Mining</b><span>30 SPNX / 24H</span><small>Default daily mining rate.</small></div>
+    <div><b>Referral Boost</b><span>+1% Per Referral</span><small>No cap. KYC referrals counted for final conversion.</small></div>
+    <div><b>Halving</b><span>-10% / 10K KYC</span><small>Base mining decreases as verified users grow.</small></div>
+    <div><b>Conversion</b><span>6-Month Window</span><small>After mainnet launch. Unconverted balances are burned.</small></div>
+    <div><b>Team Vesting</b><span>12M Lock + Vesting</span><small>Designed for long-term alignment.</small></div>
+  </div>
+</section></main>
+<a class="ai-float" href="captain-ai.html">🤖</a>
+<footer>
+  <div class="socials">
+    <span>FOLLOW US</span>
+    <a href="https://t.me/spacesnovax" target="_blank">Telegram</a>
+    <a href="https://x.com/spacenovaxteam" target="_blank">X</a>
+    <a href="https://youtube.com/@spacenovaxteam" target="_blank">YouTube</a>
+    <a href="https://discord.gg/rxVNWMC8e8" target="_blank">Discord</a>
+  </div>
+  <p>© <span id="year"></span> SpaceNovaX · spacenovax@hotmail.com</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
