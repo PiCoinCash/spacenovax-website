@@ -1,3 +1,3 @@
-# SpaceNovaX Clean No 3D No Image Text
+# SpaceNovaX Exact Hero Model
 
-All generated 3D/text-image assets removed.
+Uses the selected hero model image as homepage background.
