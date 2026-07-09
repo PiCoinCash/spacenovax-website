@@ -1,1 +1,1 @@
-SpaceNovaX NOVA-X1 Cinematic Website. Upload this ZIP to Cloudflare Pages or GitHub Pages. Telegram link: https://t.me/spacesnovax
+SpaceNovaX NOVA-X1 Corrected Site. Fixed: no giant blue circle overlay, no mirrored ship text, distinct page scenes, current official tokenomics 65/10/10/5/5/3/2.
