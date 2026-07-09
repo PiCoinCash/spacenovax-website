@@ -1,3 +1,3 @@
-# SpaceNovaX Live Cinematic HQ
+# SpaceNovaX Premium v2 Cinematic
 
-High-quality live cinematic hero background.
+Cloudflare Pages static site.
