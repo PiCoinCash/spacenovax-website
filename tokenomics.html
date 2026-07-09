@@ -3,63 +3,46 @@
 <head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#020712">
-<meta name="description" content="SpaceNovaX V2 Cinematic Edition. Explore. Mine. Evolve.">
+<meta name="description" content="SpaceNovaX NOVA-X1 official website. Explore. Mine. Evolve.">
+<meta property="og:title" content="SpaceNovaX | NOVA-X1">
+<meta property="og:description" content="Explore. Mine. Evolve. Mine SPNX, complete missions and join the SpaceNovaX universe.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&family=Orbitron:wght@600;800;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css"><title>Tokenomics | SpaceNovaX</title></head>
 <body>
 <canvas id="starfield"></canvas>
-<div class="meteor m1"></div><div class="meteor m2"></div><div class="meteor m3"></div>
 <header class="topbar">
   <a class="brand" href="index.html">
-    <img src="assets/img/spacenovax-symbol.jpg" alt="SpaceNovaX Symbol">
+    <img src="assets/spacenovax-logo.jpg" alt="SpaceNovaX logo">
     <span><b>SPACENOVA<i>X</i></b><small>EXPLORE. MINE. EVOLVE.</small></span>
   </a>
-  <nav id="nav"><a class="" href="index.html">HOME</a>
-<a class="" href="about.html">ABOUT</a>
-<a class="active" href="tokenomics.html">TOKENOMICS</a>
-<a class="" href="roadmap.html">ROADMAP</a>
-<a class="" href="mission.html">MISSION</a>
-<a class="" href="captain-ai.html">CAPTAIN AI</a>
-<a class="" href="whitepaper.html">WHITEPAPER</a>
-<a class="" href="community.html">COMMUNITY</a></nav>
-  <div class="header-actions">
+  <nav id="nav"><a class="" href="index.html">HOME</a><a class="" href="about.html">ABOUT</a><a class="active" href="tokenomics.html">TOKENOMICS</a><a class="" href="roadmap.html">ROADMAP</a><a class="" href="mission.html">MISSION</a><a class="" href="captain-ai.html">CAPTAIN AI</a><a class="" href="whitepaper.html">WHITEPAPER</a><a class="" href="community.html">COMMUNITY</a></nav>
+  <div class="actions">
     <a class="launch" href="https://t.me/spacesnovax" target="_blank">🚀 LAUNCH APP</a>
     <button class="lang">🌐 EN</button>
     <button id="hamb">☰</button>
   </div>
 </header>
-<main><section class="hero" style="--hero:url('assets/heroes/tokenomics-hero.jpg')">
-<div class="hero-copy">
-<p class="welcome">WELCOME, CAPTAIN</p>
-<h1>SPNX ENERGY<br><span>SYSTEM</span></h1>
-<p class="lead">Official SpaceNovaX Tokenomics. Community first. Fixed supply. No Future Mint.</p>
+<main><section class="hero" style="--hero:url('assets/heroes/hero-tokenomics.jpg')">
+<div class="hero-shade"></div>
+<div class="hero-content">
+<p class="eyebrow">SPACENOVAX · NOVA-X1</p>
+<h1>TOKENOMICS</h1>
+<p class="lead">Community first. Fixed supply. No Future Mint.</p>
 
 </div>
-
-</section>
-<section class="tokenomics">
-<div class="donut"><b>65%</b><span>Community</span></div>
-<ul>
-<li><span>🌍 Community · Mining · GameFi · Missions · Referrals · Events</span><b>65%</b></li>
-<li><span>💧 Liquidity</span><b>10%</b></li>
-<li><span>🌌 Ecosystem Development</span><b>10%</b></li>
-<li><span>👨‍💻 Team</span><b>5%</b></li>
-<li><span>📢 Marketing & Partnerships</span><b>5%</b></li>
-<li><span>🏛️ Treasury</span><b>3%</b></li>
-<li><span>🤝 Advisors</span><b>2%</b></li>
-</ul>
-</section></main>
+</section><section class="token-panel"><div class="donut"><b>65%</b><span>Community</span></div><ul><li><span>Community</span><b>65%</b></li><li><span>Liquidity</span><b>10%</b></li><li><span>Ecosystem Development</span><b>10%</b></li><li><span>Team</span><b>5%</b></li><li><span>Marketing</span><b>5%</b></li><li><span>Treasury</span><b>3%</b></li><li><span>Advisors</span><b>2%</b></li></ul></section></main>
+<a class="ai-float" href="captain-ai.html">🤖</a>
 <footer>
-  <div class="footer-title">JOIN THE FLEET</div>
   <div class="socials">
+    <span>FOLLOW US</span>
     <a href="https://t.me/spacesnovax" target="_blank">Telegram</a>
     <a href="https://x.com/spacenovaxteam" target="_blank">X</a>
     <a href="https://youtube.com/@spacenovaxteam" target="_blank">YouTube</a>
     <a href="https://discord.gg/rxVNWMC8e8" target="_blank">Discord</a>
   </div>
-  <p>© 2026 SpaceNovaX · spacenovax@hotmail.com</p>
+  <p>© <span id="year"></span> SpaceNovaX · spacenovax@hotmail.com</p>
 </footer>
 <script src="script.js"></script>
 </body>

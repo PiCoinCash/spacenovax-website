@@ -1,76 +1,102 @@
 <!doctype html>
 <html lang="en">
-<head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#020712">
-<meta name="description" content="SpaceNovaX V2 Cinematic Edition. Explore. Mine. Evolve.">
+<meta name="description" content="SpaceNovaX HOME V1. Explore. Mine. Evolve.">
+<title>SpaceNovaX | HOME</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&family=Orbitron:wght@600;800;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css"><title>SpaceNovaX V2 | Home</title></head>
+<link rel="stylesheet" href="home-v1.css">
+</head>
 <body>
-<canvas id="starfield"></canvas>
-<div class="meteor m1"></div><div class="meteor m2"></div><div class="meteor m3"></div>
+<canvas id="starfield" aria-hidden="true"></canvas>
+<div class="meteor meteor-1" aria-hidden="true"></div>
+<div class="meteor meteor-2" aria-hidden="true"></div>
+<div class="meteor meteor-3" aria-hidden="true"></div>
+
 <header class="topbar">
-  <a class="brand" href="index.html">
-    <img src="assets/img/spacenovax-symbol.jpg" alt="SpaceNovaX Symbol">
+  <a class="brand" href="index.html" aria-label="SpaceNovaX Home">
+    <img src="assets/img/spacenovax-symbol.jpg" alt="SpaceNovaX symbol">
     <span><b>SPACENOVA<i>X</i></b><small>EXPLORE. MINE. EVOLVE.</small></span>
   </a>
-  <nav id="nav"><a class="active" href="index.html">HOME</a>
-<a class="" href="about.html">ABOUT</a>
-<a class="" href="tokenomics.html">TOKENOMICS</a>
-<a class="" href="roadmap.html">ROADMAP</a>
-<a class="" href="mission.html">MISSION</a>
-<a class="" href="captain-ai.html">CAPTAIN AI</a>
-<a class="" href="whitepaper.html">WHITEPAPER</a>
-<a class="" href="community.html">COMMUNITY</a></nav>
-  <div class="header-actions">
-    <a class="launch" href="https://t.me/spacesnovax" target="_blank">🚀 LAUNCH APP</a>
-    <button class="lang">🌐 EN</button>
-    <button id="hamb">☰</button>
-  </div>
+
+  <button class="hamb" id="hamb" aria-label="Open menu">☰</button>
+
+  <nav class="nav" id="nav">
+    <a class="active" href="index.html">HOME</a>
+    <a href="about.html">ABOUT</a>
+    <a href="tokenomics.html">TOKENOMICS</a>
+    <a href="roadmap.html">ROADMAP</a>
+    <a href="mission.html">MISSION</a>
+    <a href="captain-ai.html">CAPTAIN AI</a>
+    <a href="whitepaper.html">WHITEPAPER</a>
+    <a href="community.html">COMMUNITY</a>
+  </nav>
+
+  <a class="launch top-launch" href="https://t.me/spacesnovax" target="_blank" rel="noopener">🚀 LAUNCH APP</a>
 </header>
-<main><section class="hero" style="--hero:url('assets/heroes/home-hero.jpg')">
-<div class="hero-copy">
-<p class="welcome">WELCOME, CAPTAIN</p>
-<h1>WE EXPLORE.<br>WE <span>MINE.</span><br>WE <em>EVOLVE.</em></h1>
-<p class="lead">Join the galaxy of Captains. Mine SPNX Crystals. Complete missions. Evolve your ship. Build the future.</p>
-<div class="hero-actions">
-<a class="btn primary" href="https://t.me/spacesnovax" target="_blank">🚀 LAUNCH APP</a>
-<a class="btn ghost" href="mission.html">▶ WATCH TRAILER</a>
-</div>
-</div>
-<aside class="nova-panel">
-<div class="panel-head"><b>CAPTAIN AI NOVA</b><span>● ONLINE</span></div>
-<img src="assets/img/captain-nova.jpg" alt="Captain AI Nova">
-<div class="nova-msg">Hello, Captain.<br>I am Nova, your AI Fleet Commander.<br>How can I assist you today?</div>
-<div class="quick"><button>Mining Guide</button><button>Missions</button><button>Tokenomics</button></div>
-<div class="mini-input">Ask me anything... <b>➤</b></div>
-</aside>
-</section><section class="stats">
-<div><i>👥</i><b>25,680+</b><span>TOTAL CAPTAINS</span></div>
-<div><i>🛡️</i><b>18,947+</b><span>KYC VERIFIED</span></div>
-<div><i>💎</i><b>7,654,321</b><span>SPNX MINED</span></div>
-<div><i>⬡</i><b>10,000,000,000</b><span>TOTAL SUPPLY</span></div>
-<div><i>🎯</i><b>3,421,789</b><span>MISSIONS COMPLETED</span></div>
-<div><i>▰</i><b>SOLANA</b><span>BUILT ON SOLANA</span></div>
-</section><section class="dashboard">
-<a class="dash-card" href="mission.html"><img src="assets/img/mission-card.jpg"><h3>MISSION CENTER</h3><p>Play games. Complete missions. Earn SPNX rewards.</p><button>🎮 PLAY NOW</button></a>
-<a class="dash-card" href="index.html"><img src="assets/img/harvest-card.jpg"><h3>HARVEST STATION</h3><p>Mining in progress. Collect SPNX Crystals.</p><button>GO TO MINING</button></a>
-<a class="dash-card" href="index.html"><img src="assets/img/ship-card.jpg"><h3>YOUR SHIP</h3><p><b>NOVA-X1</b><br>Level 12 Explorer</p><div class="bar"><span></span></div><button>UPGRADE SHIP</button></a>
-<div class="dash-card board"><h3>GALAXY LEADERBOARD</h3><p>Top Captains</p><ol><li>CaptainMax <b>1,245,500</b></li><li>StarVoyager <b>987,300</b></li><li>NovaRider <b>765,400</b></li><li>SpaceWalker <b>632,100</b></li><li>MoonLight <b>598,700</b></li></ol><button>🏆 VIEW FULL RANKING</button></div>
-<a class="dash-card" href="community.html"><img src="assets/img/roadmap-card.jpg"><h3>EVENTS & NEWS</h3><p>Meteor Storm Event. +50% Mining Speed.</p><button>JOIN EVENT</button></a>
-</section></main>
-<footer>
-  <div class="footer-title">JOIN THE FLEET</div>
-  <div class="socials">
-    <a href="https://t.me/spacesnovax" target="_blank">Telegram</a>
-    <a href="https://x.com/spacenovaxteam" target="_blank">X</a>
-    <a href="https://youtube.com/@spacenovaxteam" target="_blank">YouTube</a>
-    <a href="https://discord.gg/rxVNWMC8e8" target="_blank">Discord</a>
-  </div>
+
+<main>
+  <section class="home-hero">
+    <div class="bg-layer"></div>
+    <div class="nebula-layer" aria-hidden="true"></div>
+
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <p class="eyebrow">WELCOME, CAPTAIN</p>
+        <h1>WE EXPLORE.<br>WE <span>MINE.</span><br>WE <em>EVOLVE.</em></h1>
+        <p class="lead">Join the galaxy of Captains. Mine SPNX Crystals. Complete missions. Evolve your ship. Build the future of SpaceNovaX.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="https://t.me/spacesnovax" target="_blank" rel="noopener">🚀 Launch App</a>
+          <a class="btn" href="whitepaper.html">Whitepaper</a>
+        </div>
+      </div>
+
+      <aside class="nova-panel" aria-label="Captain AI Nova">
+        <div class="panel-head">
+          <b>CAPTAIN AI NOVA</b>
+          <span>● ONLINE</span>
+        </div>
+        <div class="nova-avatar">
+          <div class="avatar-core">NOVA</div>
+          <div class="avatar-ring"></div>
+        </div>
+        <p class="nova-text">Hello, Captain.<br>Mining systems online.<br>New mission available.</p>
+        <div class="quick-actions">
+          <button>Mining</button>
+          <button>Mission</button>
+          <button>Tokenomics</button>
+        </div>
+        <div class="ask-line">Ask Nova anything <b>➤</b></div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="status-bar">
+    <div><b>25,680+</b><span>Total Captains</span></div>
+    <div><b>18,947+</b><span>KYC Verified</span></div>
+    <div><b>7,654,321</b><span>SPNX Mined</span></div>
+    <div><b>10,000,000,000</b><span>Total Supply</span></div>
+    <div><b>65%</b><span>Community</span></div>
+    <div><b>SOLANA</b><span>Network</span></div>
+  </section>
+
+  <section class="home-cards">
+    <a class="card" href="mission.html"><h3>MISSION CENTER</h3><p>Pilot NOVA-X1, avoid meteors, collect SPNX Crystals.</p></a>
+    <a class="card" href="captain-ai.html"><h3>CAPTAIN AI NOVA</h3><p>Future AI Fleet Commander for every Captain.</p></a>
+    <a class="card" href="tokenomics.html"><h3>SPNX ENERGY SYSTEM</h3><p>Community 65%, fixed supply, no future mint.</p></a>
+    <a class="card" href="roadmap.html"><h3>GALAXY ROUTE</h3><p>Premium UI → Arcade → Control Center → Launch.</p></a>
+  </section>
+</main>
+
+<footer class="footer">
   <p>© 2026 SpaceNovaX · spacenovax@hotmail.com</p>
+  <p><a href="https://t.me/spacesnovax" target="_blank" rel="noopener">Telegram</a> · <a href="https://x.com/spacenovaxteam" target="_blank" rel="noopener">X</a> · <a href="https://youtube.com/@spacenovaxteam" target="_blank" rel="noopener">YouTube</a> · <a href="https://discord.gg/rxVNWMC8e8" target="_blank" rel="noopener">Discord</a></p>
 </footer>
-<script src="script.js"></script>
+
+<script src="home-v1.js"></script>
 </body>
 </html>
