@@ -1,31 +1,54 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#020712">
 <meta name="description" content="SpaceNovaX is a community-first Space, AI, Gaming and Web3 ecosystem. Explore. Mine. Evolve.">
 <meta property="og:title" content="SpaceNovaX | SPNX">
-<meta property="og:description" content="SpaceNovaX official website. Space, AI, Gaming and Web3.">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<meta property="og:description" content="Explore. Mine. Evolve. SpaceNovaX official website.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&family=Orbitron:wght@600;800;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css"><title>Captain AI | SpaceNovaX</title></head>
-<body class="ai">
-<div class="bg"></div><canvas id="starfield"></canvas><div class="meteor one"></div><div class="meteor two"></div><div class="meteor three"></div>
+<body>
+<canvas id="starfield"></canvas>
+<div class="meteor m1"></div><div class="meteor m2"></div><div class="meteor m3"></div>
 <header class="topbar">
-<a class="brand" href="index.html"><img src="assets/spnx-logo.jpg" alt="SpaceNovaX"><span><b>SPACENOVA<i>X</i></b><small>EXPLORE. MINE. EVOLVE.</small></span></a>
-<nav id="nav"><a class="" href="index.html"><span>🏠</span>HOME</a><a class="" href="about.html"><span>🪐</span>ABOUT</a><a class="" href="tokenomics.html"><span>🪙</span>TOKENOMICS</a><a class="" href="roadmap.html"><span>🗺</span>ROADMAP</a><a class="" href="mission.html"><span>🎯</span>MISSION</a><a class="active" href="captain-ai.html"><span>🤖</span>CAPTAIN AI</a><a class="" href="whitepaper.html"><span>📄</span>WHITEPAPER</a><a class="" href="community.html"><span>👥</span>COMMUNITY</a></nav>
-<div class="actions"><a class="launch" href="https://t.me/spacesnovax" target="_blank">🚀 LAUNCH APP</a><button class="lang">◎ EN⌄</button><button id="hamb">☰</button></div>
+  <a class="brand" href="index.html">
+    <img src="assets/spnx-logo.jpg" alt="SpaceNovaX logo">
+    <span><b>SPACENOVA<i>X</i></b><small>EXPLORE. MINE. EVOLVE.</small></span>
+  </a>
+  <nav id="nav"><a class="" href="index.html"><span>🏠</span>HOME</a><a class="" href="about.html"><span>🪐</span>ABOUT</a><a class="" href="tokenomics.html"><span>🪙</span>TOKENOMICS</a><a class="" href="roadmap.html"><span>🗺</span>ROADMAP</a><a class="" href="mission.html"><span>🎯</span>MISSION</a><a class="active" href="captain-ai.html"><span>🤖</span>CAPTAIN AI</a><a class="" href="whitepaper.html"><span>📄</span>WHITEPAPER</a><a class="" href="community.html"><span>👥</span>COMMUNITY</a></nav>
+  <div class="actions">
+    <a class="launch" href="https://t.me/spacesnovax" target="_blank">🚀 LAUNCH APP</a>
+    <button class="lang">◎ EN</button>
+    <button id="hamb">☰</button>
+  </div>
 </header>
-<main><section class="hero-clean">
+<main><section class="hero" style="--hero:url('assets/hero-ai.jpg')">
+  <div class="hero-overlay"></div>
   <div class="hero-copy">
     <h1>CAPTAIN AI</h1>
-    <p>Your AI guide for mining, tokenomics, missions, roadmap and Genesis Launch.</p>
-    <ul></ul>
+    <p>Your AI guide for mining, tokenomics, missions and more.</p>
+    
     
   </div>
 </section>
-<section class="chat"><div id="chatLog"><p><b>Captain AI:</b> Welcome Captain. How can I assist you?</p></div><div class="chat-row"><input id="aiInput" placeholder="Ask Captain AI..."><button id="aiSend" class="btn primary">Send</button></div></section></main>
+<section class="chat">
+  <div id="chatLog"><p><b>Captain AI:</b> Welcome Captain. How can I assist you?</p></div>
+  <div class="chat-row"><input id="aiInput" placeholder="Ask Captain AI..."><button id="aiSend" class="btn primary">Send</button></div>
+</section></main>
 <a class="ai-float" href="captain-ai.html">🤖</a>
 <footer>
-<div class="socials"><span>FOLLOW US</span><a href="https://t.me/spacesnovax" target="_blank">✈</a><a href="https://x.com/spacenovaxteam" target="_blank">𝕏</a><a href="https://youtube.com/@spacenovaxteam" target="_blank">▶</a><a href="https://discord.gg/rxVNWMC8e8" target="_blank">☊</a></div>
-<p>© <span id="year"></span> SpaceNovaX · spacenovax@hotmail.com</p>
+  <div class="socials">
+    <span>FOLLOW US</span>
+    <a href="https://t.me/spacesnovax" target="_blank">✈</a>
+    <a href="https://x.com/spacenovaxteam" target="_blank">𝕏</a>
+    <a href="https://youtube.com/@spacenovaxteam" target="_blank">▶</a>
+    <a href="https://discord.gg/rxVNWMC8e8" target="_blank">☊</a>
+  </div>
+  <p>© <span id="year"></span> SpaceNovaX · spacenovax@hotmail.com</p>
 </footer>
 <script src="script.js"></script>
-</body></html>
+</body>
+</html>

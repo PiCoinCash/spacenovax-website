@@ -1,3 +1,4 @@
-# SpaceNovaX Fixed No Overlap
+# SpaceNovaX Real Website 8 Pages
 
-Stable layout fix: no duplicated hero, no overlapping old text, cards separated below hero. Telegram: https://t.me/spacesnovax
+Actual website package with 8 separated page hero images and stable non-overlapping layout.
+Telegram: https://t.me/spacesnovax
