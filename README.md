@@ -1,4 +1,1 @@
-# SpaceNovaX UltraHQ Website
-
-4K scalable SVG hero backgrounds, no baked English text, no blur/collage, stable website layout.
-Telegram: https://t.me/spacesnovax
+SpaceNovaX NOVA-X1 Cinematic Website. Upload this ZIP to Cloudflare Pages or GitHub Pages. Telegram link: https://t.me/spacesnovax
