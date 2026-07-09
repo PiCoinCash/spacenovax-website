@@ -1,3 +1,4 @@
-# SpaceNovaX V2 Multi Hero HQ
+# SpaceNovaX Vertical Menu Grid Homepage
 
-Each menu page uses a different high-quality cinematic hero background. Telegram link: https://t.me/spacesnovax
+Homepage redesigned with vertical 8-panel menu grid style.
+Telegram: https://t.me/spacesnovax
