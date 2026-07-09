@@ -89,3 +89,92 @@ document.addEventListener('DOMContentLoaded', () => {
     speechSynthesis.onvoiceschanged = getVoice;
   }
 })();
+
+
+// Draggable Captain AI Nova panel.
+// Drag the top bar. Position is saved in localStorage.
+// Double-click the top bar to return Nova to the original position.
+(function(){
+  const panel = document.getElementById('novaPanel');
+  const handle = document.getElementById('novaDragHandle');
+  if(!panel || !handle) return;
+
+  const saved = localStorage.getItem('spacenovax_nova_panel_position');
+  if(saved){
+    try{
+      const p = JSON.parse(saved);
+      panel.classList.add('is-floating');
+      panel.style.left = Math.max(8, Math.min(window.innerWidth - 80, p.left)) + 'px';
+      panel.style.top = Math.max(8, Math.min(window.innerHeight - 80, p.top)) + 'px';
+    }catch(e){}
+  }
+
+  let dragging = false;
+  let startX = 0, startY = 0, startLeft = 0, startTop = 0;
+
+  function clamp(v, min, max){ return Math.max(min, Math.min(max, v)); }
+
+  function beginDrag(clientX, clientY){
+    const rect = panel.getBoundingClientRect();
+    panel.classList.add('is-floating');
+    panel.style.left = rect.left + 'px';
+    panel.style.top = rect.top + 'px';
+    panel.style.right = 'auto';
+    panel.style.bottom = 'auto';
+    dragging = true;
+    startX = clientX;
+    startY = clientY;
+    startLeft = rect.left;
+    startTop = rect.top;
+  }
+
+  function moveDrag(clientX, clientY){
+    if(!dragging) return;
+    const rect = panel.getBoundingClientRect();
+    const maxLeft = window.innerWidth - rect.width - 8;
+    const maxTop = window.innerHeight - rect.height - 8;
+    const left = clamp(startLeft + clientX - startX, 8, Math.max(8, maxLeft));
+    const top = clamp(startTop + clientY - startY, 8, Math.max(8, maxTop));
+    panel.style.left = left + 'px';
+    panel.style.top = top + 'px';
+  }
+
+  function endDrag(){
+    if(!dragging) return;
+    dragging = false;
+    const rect = panel.getBoundingClientRect();
+    localStorage.setItem('spacenovax_nova_panel_position', JSON.stringify({left: rect.left, top: rect.top}));
+  }
+
+  handle.addEventListener('mousedown', (e)=>{ e.preventDefault(); beginDrag(e.clientX, e.clientY); });
+  window.addEventListener('mousemove', (e)=>moveDrag(e.clientX, e.clientY));
+  window.addEventListener('mouseup', endDrag);
+
+  handle.addEventListener('touchstart', (e)=>{
+    const t = e.touches[0];
+    if(!t) return;
+    beginDrag(t.clientX, t.clientY);
+  }, {passive:false});
+  window.addEventListener('touchmove', (e)=>{
+    const t = e.touches[0];
+    if(!t) return;
+    moveDrag(t.clientX, t.clientY);
+  }, {passive:false});
+  window.addEventListener('touchend', endDrag);
+
+  handle.addEventListener('dblclick', ()=>{
+    localStorage.removeItem('spacenovax_nova_panel_position');
+    panel.classList.remove('is-floating');
+    panel.style.left = '';
+    panel.style.top = '';
+    panel.style.right = '';
+    panel.style.bottom = '';
+  });
+
+  window.addEventListener('resize', ()=>{
+    if(!panel.classList.contains('is-floating')) return;
+    const rect = panel.getBoundingClientRect();
+    panel.style.left = clamp(rect.left, 8, Math.max(8, window.innerWidth - rect.width - 8)) + 'px';
+    panel.style.top = clamp(rect.top, 8, Math.max(8, window.innerHeight - rect.height - 8)) + 'px';
+  });
+})();
